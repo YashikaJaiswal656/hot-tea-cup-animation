@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .main{
+            height: 600px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+           align-items: end;
+           background-color: rgb(119, 178, 206);
+         
+        }
+        .cup{
+            height: 400px;
+            width: 350px;
+            background-color: gray;
+            border-radius: 0px 0px 70px 70px;
+            position: absolute;
+        }
+        .glass{
+            height: 90px;
+            width: 100%;
+            border-radius: 50%;
+            background-color: white;
+            position: relative;
+            top: -40px;
+            overflow: hidden;
+            background-image: linear-gradient(rgba(170, 165, 164, 0.575), rgba(197, 191, 191, 0.623));
+        }
+        .tea{
+            height: 80px;
+            width: 100%;
+            background-color: rgba(223, 162, 71, 0.986);
+            border-radius: 40%;
+            position: relative;
+            top: 40px;
+        }
+        .handle{
+            height: 170px;
+            width: 150px;
+            border: 20px solid gray;
+           position: absolute;
+           right: 404px;
+            border-radius: 0px 40px 40px 0px;
+            top: 350px;
+
+        }
+        .bubbles_1{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: rgb(241, 236, 236);
+            position: relative;
+            top: -300px;
+            animation: st 2s 3s infinite linear;
+        }
+        .bubbles_2{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: rgb(241, 236, 236);
+            position: relative;
+            top: -300px;
+            animation: steam 2s  infinite linear;
+        }
+        @keyframes st{
+            0%{
+               top: -300px;
+            }
+            50%{
+               top: -500px;
+               background-color: #fff;
+               opacity: 0.2;
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+            }
+            75%{
+                background-color: transparent;
+                top: -550px;
+            }
+            100%{
+                background-color: transparent;
+                top: 0px;
+                
+            }
+        }
+        @keyframes steam{
+            0%{
+               top: -300px;
+            }
+            50%{
+               top: -500px;
+               background-color: #fff;
+               opacity: 0.2;
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+            }
+            75%{
+                background-color: transparent;
+                top: -550px;
+            }
+            100%{
+                background-color: transparent;
+                top: 0px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="bubbles_1"></div>
+        <div class="bubbles_2"></div>
+<div class="cup">
+<div class="glass">
+    <div class="tea"></div>
+</div>
+</div>
+<div class="handle"></div>
+
+    </div>
+</body>
+</html>
